@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Primary */
+--blue: hsl(223, 87%, 63%);
+
+    /* Secondary */
+--paleBlue: hsl(223, 100%, 88%);
+--lightRed: hsl(354, 100%, 66%);
+
+    /* Neutral */
+--gray: hsl(0, 0%, 59%);
+--veryDarkBlue: hsl(209, 33%, 12%);
+}
+
+h2 {
+    color: var(--gray);
+}
+
+span {
+    color: var(--veryDarkBlue);
+}
+
+input {
+    padding: 15px 30px;
+    border-radius: 30px;
+    border-color: var(--blue);
+}
+
+::placeholder {
+    color: var(--paleBlue);
+}
+
+button {
+    padding: 15px;
+    border-radius: 30px;
+    background-color: var(--blue);
+    color: white;
+    border-color: var(--blue);
+}
+
+body {
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    padding: 50px 30px;
+}
+.logo {
+    padding: 20px;
+}
+.encabezado {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 0px;
+    gap: 10px;
+}
+.titulo {
+    font-size: 25px;
+    color: var(--gray);
+}
+.subscripcion {
+    font-size: 14px;
+}
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.dashboard {
+    width: 100%;
+    padding: 50px 0px;
+}
+.redes-sociales {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+        /* Arriba | Derecha | Abajo | Izquierda */
+    padding: 30px 0px 20px 0px;
+}
+.redes-sociales a{
+    color: var(--blue);
+    border: 1px solid var(--gray);
+    border-radius: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+}
+.copyright {
+    color: var(--gray);
+    font-size: 12px;
+    padding: 20px 0px;
+}
+
+.error {
+    font-size: 14px;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 20px;
+    color: var(--lightRed);
+}
